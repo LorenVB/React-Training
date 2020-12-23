@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing GifGrid component should display component match 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Boku
+  </h3>
+  <p>
+    Loading
+  </p>
+  <div
+    className="card-grid animate__animated animate__rubberBand"
+  />
+</Fragment>
+`;
+
+exports[`Testing GifGrid component should show items when images loaded by useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Boku
+  </h3>
+  <div
+    className="card-grid animate__animated animate__rubberBand"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://localhost//cosa.jpg"
+    />
+  </div>
+</Fragment>
+`;
