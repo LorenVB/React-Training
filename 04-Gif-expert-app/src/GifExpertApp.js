@@ -12,7 +12,6 @@ export const GifExpertApp = () => {
       <AddCategory setCategories={setCategories} />
       <hr />
 
-      {/* <button onClick={handleAdd}>Agregar</button> */}
 
       {categories.map((category) => (
         <GifGrid key={category} category={category} />

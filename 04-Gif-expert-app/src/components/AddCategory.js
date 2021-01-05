@@ -5,7 +5,6 @@ export const AddCategory = ({ setCategories }) => {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    console.log('Handle Input Change cambiado');
   };
 
   const handleSubmit = (e) => {
