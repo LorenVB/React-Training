@@ -1,29 +1,38 @@
-const initialState = [
-  {
+
+const initialState = [{
     id: 1,
     todo: 'Comprar pan',
-    done: false,
-  },
-];
+    done: false
+}];
 
-const toDoReducer = function (state = initialState, action) {
-  if (action?.type === 'agregar') {
-    return [...state, action.payload];
-  }
-  return state;
-};
+const todoReducer = ( state = initialState, action ) => {
+    
+    if ( action?.type === 'agregar' ) {
+        return [ ...state, action.payload ];
+    }
 
-let toDos = toDoReducer();
+    return state;
+}
 
-const newToDo = {
-  id: 2,
-  todo: 'Comprar leche',
-  done: false,
-};
+let todos = todoReducer();
 
-const action = {
-  type: 'agregar',
-  payload: newToDo,
-};
 
-console.log(toDos);
+const newTodo = {
+    id: 2,
+    todo: 'Comprar leche',
+    done: false
+}
+
+
+const agregarTodoAction = {
+    type: 'agregar',
+    payload: newTodo
+}
+
+
+todos = todoReducer( todos, agregarTodoAction );
+
+
+
+console.log(todos);
+
